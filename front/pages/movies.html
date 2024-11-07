@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lord of Pelis - Añadir Película</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="../styles/estilos.css" />
+  <link rel="resetsheet" href="../styles/reset.css" />
+</head>
+<body>
+  <div id="caja-navegador">
+    <nav class="navbar is-dark">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="../index.html">Inicio</a>
+          <a class="navbar-item" href="../pages/about.html">Sobre Nosotros</a>
+          <a class="navbar-item" href="../pages/movies.html">Más Pelis</a>
+          <a class="navbar-item" href="../pages/historia.html">Historia</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+  
+  <div class="content section">
+    <div class="container">
+      <section id="añadir-pelicula">
+        <h2 class="title">Añadir Película</h2>
+        <form id="form-add-movie" action="http://localhost:3000/movies" method="POST">
+          <div class="field">
+            <div class="control">
+              <input class="input" type="text" id="MovieName" placeholder="Nombre de la peli" required>
+            </div>
+            <p class="help is-danger" id="MovieNameError"></p>
+          </div>
+          <div class="field">
+            <div class="control">
+              <input class="input" type="number" id="MovieYear" placeholder="Año de la peli" required>
+            </div>
+            <p class="help is-danger" id="MovieYearError"></p>
+          </div>
+          <div class="field">
+            <div class="control">
+              <input class="input" type="text" id="MovieDirector" placeholder="Director de la peli" required>
+            </div>
+            <p class="help is-danger" id="MovieDirectorError"></p>
+          </div>
+          <div class="field">
+            <div class="control">
+              <input class="input" type="text" id="MovieDuration" placeholder="Duración de la peli" required>
+            </div>
+            <p class="help is-danger" id="MovieDurationError"></p>
+          </div>
+          <div class="field">
+            <div class="control">
+              <input class="input" type="text" id="MovieGenre" placeholder="Género de la peli" required>
+            </div>
+            <p class="help is-danger" id="MovieGenreError"></p>
+          </div>
+          <div class="field">
+            <div class="control">
+              <input class="input" type="number" step="0.1" id="MovieRate" placeholder="Calificación de la peli" required>
+            </div>
+            <p class="help is-danger" id="MovieRateError"></p>
+          </div>
+          <div class="field">
+            <div class="control">
+              <input class="input" type="url" id="MoviePoster" placeholder="Enlace del póster de la peli" required>
+            </div>
+            <p class="help is-danger" id="MoviePosterError"></p>
+          </div>
+          <div class="field">
+            <div class="control">
+              <button type="submit" class="button is-dark" id="addMovie">Añadir Película</button>
+              <button type="reset" class="button is-dark" id="deleteMovie">Quitar pelicula</button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
+  </div>
+
+  <script src="../scripts/index.js"></script>
+  <script src="../scripts/Submitbutton.js"></script>
+</body>
+</html>

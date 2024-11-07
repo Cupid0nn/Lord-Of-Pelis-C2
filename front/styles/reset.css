@@ -1,0 +1,89 @@
+/* reset.css */
+
+/* Elimina márgenes, padding y bordes de todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Elimina la decoración de enlaces */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Restablece el tamaño de la fuente y la altura de la línea */
+  body {
+    font-size: 100%;
+    line-height: 1;
+  }
+  
+  /* Hace que las listas no tengan estilo de lista */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Elimina el estilo de las citas en blockquote, q y figcaption */
+  blockquote, q, figcaption {
+    quotes: none;
+  }
+  
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+    content: '';
+    content: none;
+  }
+  
+  /* Establece una altura mínima para las tablas y elimina el espacio entre las celdas */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  /* Elimina el relleno de textarea y pone los bordes en cero */
+  textarea {
+    padding: 0;
+    border: 0;
+  }
+  
+  /* Resetea el estilo de imágenes */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Elimina el borde en todos los elementos que pueden recibir foco */
+  :focus {
+    outline: none;
+  }
+  
+  /* Estilos básicos para HTML5 */
+  article, aside, details, figcaption, figure,
+  footer, header, hgroup, main, menu, nav, section {
+    display: block;
+  }
+  
+  /* Estilo para elementos multimedia y de formulario */
+  audio, canvas, video, progress {
+    display: inline-block;
+    vertical-align: baseline;
+  }
+  
+  /* Resetea el estilo de los botones */
+  button, input, select {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    color: inherit;
+    line-height: normal;
+  }
+  
+  /* Establece el estilo básico para el contenido generado */
+  ::before, ::after {
+    box-sizing: inherit;
+  }
+  
